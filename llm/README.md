@@ -36,10 +36,3 @@ cp .env.example .env     # fill in real values locally; never commit .env
 pip install -r projects/audio-to-text-ai/requirements.txt
 docker run -d --name qdrant -p 6333:6333 qdrant/qdrant   # for tour-rag-agent
 ```
-
-## Security
-
-All real credentials were replaced with fake placeholders, notebook outputs were
-cleared, and employee names were anonymized. **Rotate the original OpenAI key, DB
-passwords, Netgsm password and SMTP app password** — they must be considered
-compromised. See the [root README](../README.md#security) for the full list.
