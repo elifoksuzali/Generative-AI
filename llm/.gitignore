@@ -1,0 +1,30 @@
+# Secrets — never commit real credentials
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Models / weights / large artifacts
+*.pth
+*.pt
+*.gguf
+*.bin
+*.safetensors
+triage-gguf/
+triage-lora/
+
+# Audio / media work files
+*.wav
+*.mp3
+*.m4a
+
+# Logs & data dumps
+*.log
+logs/
+data/
