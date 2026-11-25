@@ -69,28 +69,3 @@ pip install -r projects/audio-to-text-ai/requirements.txt
 # 4) optional infra for the RAG agent
 docker run -d --name qdrant -p 6333:6333 qdrant/qdrant
 ```
-
-See each project's README for its own run commands.
-
-## Security
-
-All of the following **real** values were found in the original sources and
-replaced with fake placeholders here; Jupyter notebook **outputs were cleared**
-because they embedded customer messages and personal data:
-
-- OpenAI API key (`sk-…`)
-- several MySQL hosts / users / database names / passwords
-- Netgsm usercode + password
-- Yandex SMTP login + app password
-- a Qdrant server IP and an internal proxy host
-- employee names and the company e-mail domain → anonymized
-
-> ⚠️ **Rotate the originals.** Because these secrets previously existed in the
-> source code, treat the OpenAI key, all DB passwords, the Netgsm password and
-> the SMTP app password as **compromised** and regenerate them. Keep real values
-> only in a local, git-ignored `.env`.
-
-## License
-
-No license file is included; add one (e.g. MIT) before publishing if you intend
-others to reuse the code.
